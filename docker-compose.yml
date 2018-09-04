@@ -33,7 +33,7 @@ services:
 
   magento:
     image: 'magebr/magento'
-    build: .
+    #build: .
     ports:
       - '80:80'
       - '443:443'
@@ -48,6 +48,5 @@ services:
       - SESSION_HOST=redis_cache_session
       - PAGE_HOST=redis_cache_page
     volumes:
-      - '~/Sites/magento:/var/www/html:rw,delegated'
+      - '~/Sites/magento/magebr/my-repo:/var/www/html:rw,delegated'
       - './php_overrides.ini:/usr/local/etc/php/conf.d/zz-php_overrides.ini'
-      - './resources/etc/default.local.redis.xml:/var/www/html/app/etc/local.xml'
