@@ -32,7 +32,7 @@ services:
       - '6379'
 
   magento:
-    image: 'magebr/magento'
+    image: 'cajuclc/magento'
     #build: .
     ports:
       - '80:80'
