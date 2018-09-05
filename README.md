@@ -72,12 +72,12 @@ Without Redis: default.local.xml
 Just pick one and copy to your repo folder, command will look like this:
 * With Redis
 ```
-~/Sites/magento/magebr-docker-magento/resources/default.local.redis.xml ~/Sites/magento/my-repo/app/etc/local.xml
+cp ~/Sites/magento/magebr-docker-magento/resources/default.local.redis.xml ~/Sites/magento/my-repo/app/etc/local.xml
 ```
 
 * Without Redis
 ```
-~/Sites/magento/magebr-docker-magento/resources/default.local.xml ~/Sites/magento/my-repo/app/etc/local.xml
+cp ~/Sites/magento/magebr-docker-magento/resources/default.local.xml ~/Sites/magento/my-repo/app/etc/local.xml
 ```
 
 That should be it. Have fun coding locally!
